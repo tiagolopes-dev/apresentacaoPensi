@@ -1,0 +1,81 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.page{
+  margin-top: 100px;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.cacaPalavra{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.descobrir{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.descobrir input{
+  width: 180px;
+  height: 20px;
+  border-radius: 8px;
+}
+
+.descobrir button{
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.acertos-container {
+ text-align: center;
+ padding: 10px;
+}
+
+.acertos-container p {
+  margin-right: 10px; 
+}
+
+@media screen and (max-width: 600px) {
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.body{
+  margin-top: 0;
+}
+
+.page {
+  padding: 10px;
+}
+
+.titulo{
+  text-align: center;
+} 
+
+.descobrir input{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.descobrir button{
+  border-radius: 10px;
+  height: 30px;
+  width: 60px;
+}
+}
