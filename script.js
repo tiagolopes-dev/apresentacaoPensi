@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const acertosDisplay = document.getElementById('acertosDisplay');
 
   buttonSubmit.addEventListener('click', function () {
-    const searchNames = document.getElementById('searchNames').value.toLowerCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+    const searchNamesInput = document.getElementById('searchNames');
+    let searchNames = searchNamesInput.value.toLowerCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
     const cacaPalavraNormalized = cacaPalavra.map(word => word.toLowerCase().trim().normalize('NFD').replace(/[\u0300-\u036f]/g, ""));
 
@@ -22,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
       alert('Não foi dessa vez :(');
     }
 
-    searchNames = ""
+    searchNamesInput.value = ""; // Limpa o campo de entrada após o envio
   });
 });
+
 
 
